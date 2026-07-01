@@ -364,7 +364,7 @@
 
 
   
-# # 90. Wap to get the following output. 
+  # # 90. Wap to get the following output. 
 # #             S=’hai hello ‘ 
 # #             Out={‘hai’:’ai’,’hello:’eo’}
 # S="hai hello"
