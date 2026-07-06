@@ -210,3 +210,76 @@
 # result=nperfectNo(3)  
 # print(result)
 
+
+
+# 130.Wap to check whether the number is prime or not. 
+# def primeNo(num):
+#     isPrime=True
+#     i=2
+#     if num>1:
+#         while i<num:
+#             if num % i == 0: 
+#                 isPrime=False
+#             i+=1
+            
+#         if isPrime==True:
+#             return f"{num} is prime number"
+#         else:
+#             return f"{num} is not prime number"
+#     else:
+#         return f"{num} is not a prime number"        
+                
+    
+# result=primeNo(12)
+# print(result)
+
+
+
+# # 131.wap to print the prime numbers between the given range. 
+# def primeNoInRange():
+#     sNum=int(input("Enter starting num:"))
+#     eNum=int(input("Enter ending number:"))
+#     if sNum<eNum:
+#         for j in range(sNum,eNum):
+#             isPrime=True
+#             i=2
+#             if j>1:
+#                 while i<j:
+#                     if j % i == 0: 
+#                         isPrime=False
+#                     i+=1
+                    
+#                 if isPrime==True:
+#                     print(f"{j} is prime number")
+                      
+#     else:    
+#         print("Invalid Range")
+
+# primeNoInRange()
+
+
+
+
+# # 132.Wap to find the nth prime number. 
+# def nprimeNo(num):
+
+#     current=2
+#     found=0
+#     while True:       
+#         isPrime=True
+#         i=2
+#         while i<current:
+#                 if current % i == 0: 
+#                     isPrime=False
+#                 i+=1
+           
+            
+#         if isPrime==True:
+#             found+=1
+#             if found==num:
+#                 return f"{num}th prime number is {current}"
+            
+#         current+=1  
+                   
+# result=nprimeNo(6)  
+# print(result)
