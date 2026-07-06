@@ -116,3 +116,97 @@
 
 # armstrongInRange()
 
+
+
+
+# # 126.Wap to find the nth arm strong number. 
+# def nArmStorngNumber(num):
+
+#     current=1
+#     found=0
+#     while True:       
+#         temp_num=current
+#         total=0
+#         count_digit = len(str(current))  # this is better as we dont need of extra for loop.......
+        
+#         while temp_num!=0:
+#             ld=temp_num%10
+#             total+=(ld**count_digit)
+#             temp_num=temp_num//10
+            
+#         if total==current:
+#             found+=1
+#             if found==num:
+#                 return f"{num}th Armstrong number is {current}"
+            
+#         current+=1  
+                   
+# result=nArmStorngNumber(10)  
+# print(result)
+
+
+
+# # 127.Wap to check whether the number is perfect or not. 
+# def perfectNo(num):
+#     total=0
+#     i=1
+#     while i<num:
+#         if num%i==0:
+#             total+=i
+#         i+=1
+#     if total==num:
+#         return f"The number {num} is perfect"
+#     else:
+#         return f"The number {num} is not perfect"        
+    
+# result=perfectNo(28)
+# print(result)
+
+
+
+# # 128.wap to print the perfect numbers between the given range. 
+# def perfectNoInRange():
+#     sNum=int(input("Enter starting num:"))
+#     eNum=int(input("Enter ending number:"))
+#     if sNum<eNum:
+#         for j in range(sNum,eNum):
+#             total=0
+#             i=1
+#             while i<j:
+#                 if j%i==0:
+#                     total+=i
+#                 i+=1
+#             if total==j:
+#                 print(f"The number {j} is perfect")        
+       
+#     else:    
+#         print("Invalid Range")
+
+# perfectNoInRange()
+
+
+
+# # 129.Wap to find the nth perfect number. 
+# def nperfectNo(num):
+
+#     current=2
+#     found=0
+#     while True:       
+#         total=0
+#         i=1
+#         while i<current:
+#             if current%i==0:
+#                     total+=i
+#             i+=1
+           
+            
+#         if total==current:
+#             found+=1
+#             if found==num:
+#                 return f"{num}th perfect number is {current}"
+            
+#         current+=1  
+                   
+# result=nperfectNo(3)  
+# print(result)
+
