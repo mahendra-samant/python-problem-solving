@@ -283,3 +283,69 @@
                    
 # result=nprimeNo(6)  
 # print(result)
+
+
+
+# # 133.Wap to check whether the number is Fibonacci number or not. 
+# def fibonacciNo(num):
+#     if num == 0:
+#         return f"{num} is Fibonacci number"
+#     a=0
+#     b=1
+#     while b<=num:
+#         if b==num:
+#             return f"{num} is Fibonacci number"
+#         c=a+b
+#         a=b
+#         b=c
+               
+#     return f"{num} is not Fibonacci number"      
+# result=fibonacciNo(0)
+# print(result)
+
+
+
+
+# # 134.wap to print the Fibonacci numbers between the given range. 
+# def fibonacciNoInRange():
+#     sNum=int(input("Enter starting num:"))
+#     eNum=int(input("Enter ending number:"))
+#     if sNum<eNum:
+#         for j in range(sNum,eNum):
+#             if j == 0:
+#                 print(f"{j} is Fibonacci number")
+#                 continue  #when we use continue so after chekinj j==0 it will not gone check in while loop condition it will start from 1
+#             a=0
+#             b=1
+#             while b<=j:
+#                 if b==j:
+#                     print(f"{j} is Fibonacci number")
+#                     break   #it it used to handle duplicate, that is 0,1,1,5,8 (1 is repeating)
+#                 c=a+b
+#                 a=b
+#                 b=c
+                
+                       
+#     else:    
+#         print("Invalid Range")
+
+# fibonacciNoInRange()
+
+
+
+# # 135.Wap to find the nth Fibonacci number. 
+# def nfibonacciNo(num):
+#     if num <= 0:
+#         return "Invalid position"
+#     a=0
+#     b=1
+#     count=1
+#     while count<num:
+#         c=a+b
+#         a=b
+#         b=c
+#         count+=1
+#     return f"{num}th Fibonacci number is {b}"    
+                   
+# result=nfibonacciNo(6)  
+# print(result)
