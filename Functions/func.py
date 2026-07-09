@@ -349,3 +349,72 @@
                    
 # result=nfibonacciNo(6)  
 # print(result)
+
+
+# # 136.Wap to check whether the number is palindrome or not. 
+#1way
+# def palindromeNo(num):
+#     temp=str(num)
+#     if num==int(temp[::-1]):
+#         return f"{num} is palindrome number"
+#     else:
+#         return f"{num} is not palindrome number"
+    
+# result=palindromeNo(121)
+# print(result)
+
+
+#2way
+# def palindromeNo(num):
+#     temp=num
+#     rev=0
+#     while num!=0:
+#         ld=num%10
+#         rev=rev*10+ld
+#         num=num//10
+#     if rev==temp:
+#         return f"{temp} is palindrome number"
+#     else:
+#         return f"{temp} is not palindrome number"  
+
+# result=palindromeNo(122)
+# print(result)
+
+
+
+# # 137.wap to print the palindrome numbers between the given range. 
+# def palindromeNoInRange():
+#     sNum=int(input("Enter starting num:"))
+#     eNum=int(input("Enter ending number:"))
+#     if sNum<eNum:
+#         for j in range(sNum,eNum):
+#             temp=str(j)
+#             if j==int(temp[::-1]):
+#                 print(f"{j} is palindrome number")
+
+#     else:    
+#         print("Invalid Range")
+
+# palindromeNoInRange()
+
+
+
+# # 138.Wap to find the nth palindrome number. 
+# def npalindromeNo(num):
+#     if num>0:  # if the palindrome start form 1 
+#         count=0
+#         current=1 # if the palindrome start form 1 otherwise if starts from 0 then current=0
+        
+#         while True:
+#             temp=str(current)
+#             if current==int(temp[::-1]):
+#                 count+=1
+#                 if count==num:
+#                     return f"{num}th palindrome number is {current}"
+#             current+=1
+        
+#     else:
+#         return "Invalid input"   
+    
+# result=npalindromeNo(16)  
+# print(result)
