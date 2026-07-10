@@ -418,3 +418,86 @@
     
 # result=npalindromeNo(16)  
 # print(result)
+
+
+
+# # 139.Wap to check whether the number is happy number or not. 
+# def happyNo(num):
+#     seen=set()
+#     temp=num
+#     while num !=1:
+#        if num in seen:
+#            return f"{temp} is Not Happy number"
+#        seen.add(num)
+#        total=0
+#        while num!=0:
+#            total+=((num%10)**2)
+#            num=num//10
+#        num=total  
+    
+#     return f"{temp} is  Happy number"     
+           
+
+# result=happyNo(7)
+# print(result)   
+
+
+# # 140.wap to print the happy numbers between the given range. 
+# def happyNoInRange():
+#     sNum=int(input("Enter starting num:"))
+#     eNum=int(input("Enter ending number:"))
+#     if sNum<eNum:
+#         for j in range(sNum,eNum):
+#             seen=set()
+#             num=j
+#             temp=num
+#             while num !=1:
+#                 if num in seen:
+#                     break
+#                 seen.add(num)
+#                 total=0
+#                 while num!=0:
+#                     total+=((num%10)**2)
+#                     num=num//10
+#                 num=total  
+#             if num == 1:
+#                 print(f"{temp} is  Happy number")
+            
+    
+#     else:    
+#         print("Invalid Range")
+
+# happyNoInRange()
+
+
+# # 141.Wap to find the nth happy number. 
+# def nhappyNo(num):
+    
+#     current=1
+#     found=0
+#     while True:
+#         seen=set()
+#         original=current
+        
+#         while current !=1:
+#             if current in seen:
+#                 break
+#             seen.add(current)
+            
+#             temp_num=current
+            
+#             total=0
+#             while temp_num!=0:
+#                 total+=((temp_num%10)**2)
+#                 temp_num=temp_num//10
+#             current=total  
+        
+#         if current == 1:
+#             found+=1
+#             if num==found:
+#                 return f"{num}th Happy number is {original}"
+    
+#         current = original + 1
+        
+# result=nhappyNo(3)
+# print(result)    
