@@ -501,3 +501,130 @@
         
 # result=nhappyNo(3)
 # print(result)    
+
+
+
+# 142.wap to check whether the string is anagram or not. 
+#1way
+# def isAnagram(str1, str2):
+#     s1=str1.replace(" ","").lower()
+#     s2=str2.replace(" ","").lower()
+    
+#     return sorted(s1) == sorted(s2)
+    
+# result=isAnagram("silent","listen")
+# print(result)    
+
+
+# #2way
+# def isAnagram(str1, str2):
+#     str1 = str1.replace(" ", "").lower()
+#     str2 = str2.replace(" ", "").lower()
+#     if len(str1) != len(str2):
+#         return False
+#     s1,s2={},{}
+#     for i in str1:
+#         if i not in s1:
+#             s1[i]=1
+#         else:
+#             s1[i]+=1
+            
+#     for i in str2:
+#         if i not in s2:
+#             s2[i]=1
+#         else:
+#             s2[i]+=1 
+    
+#     if s1==s2:
+#         return True         
+#     else:
+#         return False 
+                
+# result=isAnagram("silent", "listen") 
+# print(result)  
+
+
+# # 143.Wap to check whether the string is pangram or not. 
+# def isPangram(s):
+#     s=s.lower()
+#     letters=set()
+#     for ch in s:
+#         if ch.isalpha():
+#             letters.add(ch)
+            
+#     # return len(letters) == 26     #istead of extra if else        
+#     if len(letters)==26:
+#         return True        
+#     else:
+#         return False        
+    
+# result=isPangram("The quick brown fox jumps over the lazy dog")
+# print(result)
+
+
+
+
+# # 144.Wap to check whether the number is xylem or not. 
+# #             Ex: 1234→1+4=2+3
+#1way (usinf while loop) 
+# def isXylemNo(num):
+    
+#     temp=str(num)
+    
+#     if len(temp) < 2:
+#         return False
+    
+#     firstLastTotal=int(temp[0]) + int(temp[-1])
+#     remainingTotal=0
+#     i=1
+#     while i<len(temp)-1:
+#         remainingTotal+=int(temp[i])
+#         i+=1    
+    
+#     # return firstLastTotal == remainingTotal
+#     if firstLastTotal==remainingTotal:
+#         return True
+#     else:
+#         return False      
+                    
+# result=isXylemNo(12348)
+# print(result)
+
+
+# #2way(using for loop)
+# def isXylemNo(num):
+    
+#     temp=str(num)
+    
+#     if len(temp) < 2:
+#         return False
+    
+#     firstLastTotal=int(temp[0]) + int(temp[-1])
+#     remainingTotal=0
+    
+#     for i in range(1,len(temp)-1):
+#         remainingTotal+=int(temp[i])
+     
+#     return firstLastTotal == remainingTotal     
+                    
+# result=isXylemNo(12348)
+# print(result)
+
+
+
+# # 145.Wap to check whether the number is spy or not. 
+# #             Ex: 123→1+2+3=1*2*3
+# def isSpyNo(num):
+   
+#     total=0
+#     product=1
+#     while num!=0:
+#         ld=num%10
+#         total+=ld
+#         product*=ld
+#         num=num//10
+
+#     return total==product
+
+# result=isSpyNo(123)
+# print(result)
